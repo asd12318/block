@@ -1,5 +1,4 @@
 .login{
-    width: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -8,6 +7,7 @@
     border-bottom:  solid #9fa19f;
     border-left: solid #9fa19f;
     border-right: solid  #9fa19f;
+    background-color: #111931;
    
 }
 
@@ -24,14 +24,15 @@ li{
 padding: 0 0 12px;
 }
 .login li input{
-    width: 50%;
+    width: 100%;
     height: 46px;
     box-sizing: border-box;
-    text-indent: 13px;
+    
+
 }
 .login li input::-webkit-input-placeholder {
     font-size: px; color: #9fa19f;
-    text-indent: 13px;
+
 }
 
 .login-btn {
@@ -59,3 +60,7 @@ padding: 0 0 12px;
     padding: 0 0 12px;
 }
 
+p{
+    color: red;
+    text-align: center;
+}

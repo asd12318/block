@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photogram</title>
+    <link rel="stylesheet" href="./css/singup.css">
 </head>
 <body>
     <div id="header">
@@ -10,35 +11,37 @@
     </div>
     <div id="content">
         <div>
-            <h3>아이디</h3>
-           <div class="singup-from">
+            <div class="singup-from">
                <li><input type="text" id="id" class="id" maxlength="20" placeholder="아이디"></li>
-            <h3>비밀번호</h3>
+               <h5>이미중복된 아이디입니다.<h5>
                <li><input type="password" id="password" class="id" maxlength="20" placeholder="비밀번호"></li>
-               <h3>이메일</h3>
+               <li><input type="password" id="password" class="id" maxlength="20" placeholder="비밀번호 확인"></li>
+               <h5>비밀번호가 맞지않습니다.</h5>
                <li><input type="text" id="email" class="id" maxlength="20" placeholder="이메일"></li>
+               <select dir="rtl" name="emadress">
+                <option value="naver.com">naver.com@
+                </option>
+                <option value="nate.net">nate.net@
+                <nate class="net"></nate></option>
+                <option value="hanmail.com">hanmail.com@</option>
+                <option value="gmail.com">gmail.com@</option><dir</select>
             </div>
         </div>
     </div>
-             <div>
-                <h3><label for="yy">생년월일</label></h3>
-
-                <div id="bir_wrap"> 
-                    <div id="bir_yy">
-                        <span class="box">
-                            <input type="text" id="ymd" class="int" maxlength="8" placeholder="생년월일 (8자)">
-                        </span>
+             <div> 
+                    <div class="bir_yy">
+                    <input type="text" id="ymd" class="int" maxlength="8" placeholder="생년월일 (8자)">
                     </div>
-                    </div>
-                </div>  
-        <from>
-            <div>
+                    
+    
+             <div id="gender">
                 <span><input type="radio" name="fruit" id="man">남자</span>
                 <span><input type="radio" name="fruit" id="girl">여자</span>
             </div>
-        </from>
+        </div>
 
-        <div><input type="submit" value="가입하기" class="singup-btn">
+        <div>
+            <input type="submit" value="가입하기" class="singup-btn">
 
     </div>
 </body>
