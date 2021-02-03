@@ -3,22 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    
+    <div class="container">
     <section class="login">
         <div id="header">
-            <img src="./imges/logo.jpg" alt="Photo Community Logo">
+            <img src="../imges/logo.jpg" alt="Photo Community Logo">
         </div>
-        
+        <div class="input_box">
         <ul>
-            <li><input type="text" placeholder="아이디" title="아이디입력"></li>
+            <li><input type="text" placeholder="아이디" title="아이디입력" class="input_id"></li>
             <li><input type="password" placeholder="비밀번호" title="비밀번호입력"></li>
-            <li><input type="submit" value="로그인" class="login-btn"></li>
-            <li><input type="submit" value="회원가입" class="singup-btn"></li>
+            <li><input type="submit" value="로그인" id="login-btn"></li>
+            <li><input type="submit" value="회원가입" id="singup-btn"></li>
         </ul>
-   <p>잘못된 비밀번호입니다. 다시 확인하세요.</p>
+        </div>
+    </div>
     </section>
 </body>
 </html>
