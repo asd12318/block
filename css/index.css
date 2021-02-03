@@ -18,14 +18,64 @@
     right: 90%;
     height: 50;
     margin: 30px;
+
+}
+#login_btn {
+    width: 100%;
+    height: 51px;
+    background:  #FFBDBD;
+    margin-top: 2px ;
+    border-radius: 12px;
+    font-size: 23px;
 }
 /* 여기까지 헤더 */
 /* 여기부터 컨테이너 */
 
-.rolling_panel { position: relative; width: 1620px; height: 500px; margin-left: 70px; padding: 0; border: none; overflow: hidden; }
-.rolling_panel ul { position: absolute; margin: 10px; padding: 0; list-style: none; }
-.rolling_panel ul li { float: left;  height: 495px; width: 800px; margin-right: 10px;}
-.rolling_panel ul li img{ width: 100%; height: 100%;}
+.rolling_panel { 
+    position: relative; 
+    width: 1620px; 
+    height: 500px; 
+    margin-left: 70px; 
+    padding: 0; 
+    border: none; 
+    overflow: hidden; 
+}
+.rolling_panel ul { 
+    position: absolute; 
+    margin: 10px; 
+    padding: 0; 
+    list-style: none; 
+}
+.rolling_panel ul li { 
+    float: left;  
+    height: 495px; 
+    width: 800px; 
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 5px 1px #111931;
+}
+.rolling_panel ul li img{ 
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s ease;
+
+}
+.rolling_panel ul li:hover .rolling_panel ul li img{
+    bottom: 150px;
+}
+.desc{
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: pink;
+    
+}
 .photo_box{
     width: 1770px;
     height: 520px;
@@ -35,76 +85,34 @@
     transform: translate(-50%, -50%);
     float: left;
     border: 1px solid black;
+    background-color: #FFBDBD;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.6);
 }
 #prev{
     left: 15px;
     top: 50%;
     position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 3px 1px black;
+    transform: translate(10%, -50%);
 }
 #next{
     right: 15px;
     top: 50%;
     position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 3px 1px black;
+    transform: translate(-10%, -50%);
 }
-
-
-
-
-
-
-/* #login_btn{
-    height: 51px;
-    width: 90px;
-    background-color: #ffbdbd;
-    border-radius: 5px;
-    font-size: 23px;
-    border: none;
-}
-
 body{
-    margin: 0px;
-    background-color: rgba(255, 189, 190, 0.5);
+    background-color: #111931;
+    margin: 0;
 }
-#container{
-    width: 100%;
-    height: 100%;
-}
-.photo_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: list-item;
-    overflow: hidden;
-}
-.rolling_panel{
-    overflow: hidden;
-    position: relative;
-    width: 1700px;
-    height: 500px;
-    overflow: hidden;
 
-}
-ul{
-    width: 100%;
-    max-width: 1680px;
-    margin: auto;
-    float: left;
-    height: 500px;
-    overflow: hidden;
-}
-li{
-    float: left;
-    list-style: none;
-    margin: 15px;
-    position: relative;;
-    overflow: hidden;
-}
-li > img {
-    height: 495px;
-    width: 880;
-}
-.next_btn{
-    float: right;
-    
-} */
+
+

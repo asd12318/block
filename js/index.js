@@ -44,7 +44,7 @@ $(document).ready(function() {
         // 2초마다 start 호출
         rollingId = setInterval(function() {
             start();
-        }, 3000);
+        }, 4000);
     }
 
     function start() {
