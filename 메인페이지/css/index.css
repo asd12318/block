@@ -1,0 +1,147 @@
+/*header*/
+nav {
+  float: right;
+}
+
+.header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li.icon {
+  flex-basis: 25%;
+}
+
+header {
+  background-color: #111931;
+  padding: 20px;
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  margin: .25rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #ffbdbd;
+}
+
+.menu a:hover {
+  background: purple;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+       /*header*/
+
+/*body*/
+
+   .rolling_panel { position: relative; width: 1020px; height: 310px; margin: 0; padding: 0; border: 0px solid #c7c7c7; 
+      overflow: hidden; 
+            left: 30%; 
+            max-width: 1200px; 
+            top: 16em;}
+            .rolling_panel ul { position: absolute; margin: 0px; padding: 0; list-style: none; }
+            .rolling_panel ul li { float: left; width: 355px; height: 300px;}
+            .container{
+          padding: 2rem;
+        }
+        .gallery{
+          width: 100%;
+          max-width: 1200px;
+          min-height: 70vh;
+          margin:auto;
+          
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+        }
+        
+        .gallery-item{
+          box-shadow: 2px 2px 8px -1px #693214;
+          width: 300px;
+          height: 300px;
+          margin: 10px;
+          background: #000;
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+        }
+        
+        .gallery-item-image{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgb(231, 217, 211);
+          z-index:20;
+          -webkit-transition:all .5s ease;
+          transition: all .5s ease;
+          bottom:0;
+          overflow: hidden;
+        
+        }
+        
+        .gallery-item:hover .gallery-item-image{
+          bottom: 80px;
+        }
+        
+        .gallery-item-description{
+          color:rgb(78, 44, 16);
+          font-size: .8rem;
+          width: 100%;
+          height: 80px;
+          padding: .5rem .8rem;
+          background: #eeccbe;
+          position: absolute;
+          bottom:0;
+        }
+/*사진*/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+/*body*/
+           
