@@ -1,79 +1,56 @@
 body{
-    margin: 0;
-    padding: 0;
+    background-color: rgba(255, 189, 190, 0.5);
+}
+#container{
+    background-color: #111931;
     position: absolute;
-    left: 60%;
-    top: 60%;
-    transform: translate(-60%,-60%);
-    border-top:  solid #9fa19f;
-    border-bottom:  solid #9fa19f;
-    border-left: solid #9fa19f;
-    border-right: solid  #9fa19f;
-    
-
-   
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 5px 20px 5px rgba(0,0,0, 0.7);
+    border-radius: 15px;
+    width: 370px;
+    padding: 10px;
 }
 #header{
-    text-align: center;
-    line-height: 1;
-    background-color: #111931;
+    margin-left: 20px;
+}
+.id_box{
+    height: 51px;
+}
+input{
+    margin: 5px;
+    border-radius: 7px;
+    border: none;
 }
 
-.singup-from{
-    text-align: center;
-    width: 230px;
-    margin: 35px auto;
-    position: relative;
-    border-radius: 30px;
-
-    
-}
-
-#gender{
-    margin: 20px;
-    position: absolute;
-    top: 460px;
-    right: 0px;
-   
-}
-
-div li{
-    list-style: none;
-    margin: 15px;
-    
-}
-
-.singup-btn{
-    padding: 20px 200px;
-    font-size: 15px;
-    cursor: pointer;
-    display: block;
-    text-align: right;
-}
-
-#content li input{
-    height: 45px;
-    width: 200px;
-}
-
-select {
-    height: 45px;
-    direction: rtl;
-    position: absolute;
-    top: 262px;
-    right: -115px;
-    font-size: 15px;
-    line-height: 18px;
-    color: #8e8e8e;
-}
-
-input#ymd.int{
-    width: 200px;
-    height: 45px;
+.search_id{
+    padding-bottom: 4px;
+    height: 51px;
+    background-color: #ffbdbd;
+    font-family: 'HYpost';
+    font-size: 14px;
 
 }
+.input_box{
+    width: 95%;
+    height: 51px;
+}
+.input_box_id{
+    width: 265px;
+    height: 51px;
+}
+p{
+    color: rgba(255, 100, 100, 0.7);
+}
+span{
+    color: rgba(255, 255, 255, 0.8);
+}
 
-h5{
-    color: red;
-    margin-top: 5px;
+.sign_end{
+    width: 95%;
+    height: 55px;
+    background-color: #ffbdbd;
+    font-family: 'HYpost';
+    font-size: 25px;
 }

@@ -2,47 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../imges/파비콘.png">
+    <link rel="icon" href="../imges/파비콘.png">
     <title>Photogram</title>
     <link rel="stylesheet" href="../css/singup.css">
 </head>
 <body>
+<div id="container">
     <div id="header">
-        <a href="./login.html" alt="Photo Community"><img src="/imges/logo.jpg"></a>
+        <img src="../imges/logo.jpg" >
     </div>
-    <div id="content">
-        <div>
-            <div class="singup-from">
-               <li><input type="text" id="id" class="id" maxlength="20" placeholder="아이디"></li>
-               <h5>이미중복된 아이디입니다.<h5>
-               <li><input type="password" id="password" class="id" maxlength="20" placeholder="비밀번호"></li>
-               <li><input type="password" id="password" class="id" maxlength="20" placeholder="비밀번호 확인"></li>
-               <h5>비밀번호가 맞지않습니다.</h5>
-               <li><input type="text" id="email" class="id" maxlength="20" placeholder="이메일"></li>
-               <select dir="rtl" name="emadress">
-                <option value="naver.com">naver.com@
-                </option>
-                <option value="nate.net">nate.net@
-                <nate class="net"></nate></option>
-                <option value="hanmail.com">hanmail.com@</option>
-                <option value="gmail.com">gmail.com@</option><dir</select>
-            </div>
-        </div>
-    </div>
-             <div> 
-                    <div class="bir_yy">
-                    <input type="text" id="ymd" class="int" maxlength="8" placeholder="생년월일 (8자)">
-                    </div>
-                    
-    
-             <div id="gender">
-                <span><input type="radio" name="fruit" id="man">남자</span>
-                <span><input type="radio" name="fruit" id="girl">여자</span>
-            </div>
-        </div>
+    <form action="sign_up" method="post" name="sign_up" >
 
-        <div>
-            <input type="submit" value="가입하기" class="singup-btn">
+        <input type="text" maxlength="20" placeholder="아이디" class="input_box_id">
+        <input type="button" class="search_id" value="중복 확인" >
 
-    </div>
+        <input type="password" maxlength="20" placeholder="비밀번호" class="input_box">
+      
+        <input type="password" maxlength="20" placeholder="비밀번호확인 "class="input_box">
+        <p>비밀번호가 일치하지 않습니다.</p>
+        <input type="text" maxlength="20" placeholder="이메일"class="input_box">
+        <input type="text" maxlength="8" minlength="8" placeholder="생년월일 8자" class="input_box">
+
+        <input type="submit" value="가입하기" class="sign_end">
+    </form>
+</div>
 </body>
 </html>
