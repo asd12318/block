@@ -1,42 +1,58 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인페이지</title>
-    <style>
 
-    </style>
+    <link rel="shorcut icon" href="../imges/파비콘.png">
+    <link rel="icon" href="../imges/파비콘.png">
+    <title>Photogram</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery-3.5.1.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
-    <script src="/index.js"></script>
-
-    <div id = "header">    
-        <div id="logo"><a href="./index.html"><img src="./" alt=""></a></div>
-        <div id="login"><a href="./login.html">로그인</a></div>
-        
+    <div id="header">
+        <div id="logo"><a href="./index.html"> <img src="./imges/logo.jpg" alt=""></a></div>
+        <div id='login'><button onclick="" id="login_btn">Login</button></div>
     </div>
 
     <div id="container">
-        <div id="gallery">
-            <div id="photo">
-                
-                <img src="/image/벚꽃.jpg" style="width: 480px; height: 300px;">
-                 <p>텍스트</p>
-                <input type="checkbox">좋아열
+        <div class="photo_box">
+            <button id="prev" >이전</button>
+
+            <div class="rolling_panel"> 
+                <ul>
+                    <li>
+                        <img src="./imges/꽃.jpg" >
+                        <!-- <b>꽃</b><span>꽃은 이쁘다</span> -->
+                    </li>
+                    <li>
+                        <img src="./imges/꽃2.jpg" >
+                        <!-- <b>꽃2</b><span>꽃2는 이쁘다</span> -->
+                    </li>
+                    <li>
+                        <img src="./imges/남산.jpg">
+                        <!-- <b>남산</b><span>벚꽃 질때 여기가면 벚꽃 절정임 ㅇㅋ? 여친생기면 써먹도록</span> -->
+                    </li>
+                    <li>
+                        <img src="./imges/벚꽃2.jpeg">
+                        <!-- <b>벚꽃2</b><span>왜 있엉? 무슨일이야</span> -->
+                    </li>
+                    <li>
+                        <img src="./imges/길.jpg" >
+                        <!-- <b>길</b><span>벚꽃길 혼자 울면서 걷쥬?</span> -->
+                    </li>
+                </ul>
+
             </div>
-            <div id="photo">
-                <img src="./image/벚꽃2.jpeg" style="width: 480px; height: 300px;">
-                <p>텍스트</p>
-                <input type="checkbox">좋아열
-            </div>
-            <div id="photo">
-                <img src="./image/벚꽃2.jpeg" style="width: 480px; height: 300px;">
-                <p>텍스트</p>
-                <input type="checkbox">좋아열
-            </div>
+
+            <button id="next">다음</button>
+
 
         </div>
-    </div>
 
+    </div>
 </body>
 </html>

@@ -1,0 +1,110 @@
+
+
+#header{
+    width: 100%;
+    height: 120px;
+
+    position: relative;
+    background-color: #111931;
+    float: left;
+
+}
+#logo{
+    display: inline-block
+}
+#login{
+    display: inline-block;
+    float: right;
+    right: 90%;
+    height: 50;
+    margin: 30px;
+}
+/* 여기까지 헤더 */
+/* 여기부터 컨테이너 */
+
+.rolling_panel { position: relative; width: 1620px; height: 500px; margin-left: 70px; padding: 0; border: none; overflow: hidden; }
+.rolling_panel ul { position: absolute; margin: 10px; padding: 0; list-style: none; }
+.rolling_panel ul li { float: left;  height: 495px; width: 800px; margin-right: 10px;}
+.rolling_panel ul li img{ width: 100%; height: 100%;}
+.photo_box{
+    width: 1770px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    border: 1px solid black;
+}
+#prev{
+    left: 15px;
+    top: 50%;
+    position: absolute;
+}
+#next{
+    right: 15px;
+    top: 50%;
+    position: absolute;
+}
+
+
+
+
+
+
+/* #login_btn{
+    height: 51px;
+    width: 90px;
+    background-color: #ffbdbd;
+    border-radius: 5px;
+    font-size: 23px;
+    border: none;
+}
+
+body{
+    margin: 0px;
+    background-color: rgba(255, 189, 190, 0.5);
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+.photo_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: list-item;
+    overflow: hidden;
+}
+.rolling_panel{
+    overflow: hidden;
+    position: relative;
+    width: 1700px;
+    height: 500px;
+    overflow: hidden;
+
+}
+ul{
+    width: 100%;
+    max-width: 1680px;
+    margin: auto;
+    float: left;
+    height: 500px;
+    overflow: hidden;
+}
+li{
+    float: left;
+    list-style: none;
+    margin: 15px;
+    position: relative;;
+    overflow: hidden;
+}
+li > img {
+    height: 495px;
+    width: 880;
+}
+.next_btn{
+    float: right;
+    
+} */
