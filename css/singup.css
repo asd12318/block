@@ -54,3 +54,22 @@ span{
     font-family: 'HYpost';
     font-size: 25px;
 }
+
+#password_1{
+    width: 95%;
+    height: 51px;
+}
+#password_2{
+    width: 95%;
+    height: 51px;
+}
+
+#alert-success{
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+#alert-danger{
+    padding-left: 15px;
+    line-height: 50px;
+}
