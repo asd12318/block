@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./page.css">
+    <script src="./파일미/파일미리보기.js"></script>
+</head>
+<body>
+    <div class="project-create">
+        <h3>사진 추가하기</h3>
+        <form enctype="multipart/form-data" method="post">
+            <textarea placeholder="제목을 입력해 주세요." class="header"></textarea>
+            <div id="image_container"></div>
+            <div class="file1"><input name="userfileC" type="file" id="image" accept="image/*"onchange="setThumbnail(event);"></div>
+           
+            <div id="ju"><button type="button" onclick="">저장</button></div>
+        </form>
+    </div>
+</body>
+</html>
