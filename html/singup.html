@@ -14,15 +14,15 @@
     </div>
     <form action="sign_up" method="post" name="sign_up" >
 
-        <input type="text" maxlength="20" placeholder="아이디" class="input_box_id">
-        <input type="button" class="search_id" value="중복 확인" >
+        <input type="text" name = "id"maxlength="20" placeholder="아이디" class="input_box_id">
+        <input type="button" onclick="" class="search_id" value="중복 확인" >
 
-        <input type="password" maxlength="20" placeholder="비밀번호" class="input_box">
+        <input type="password" name="password" maxlength="20" placeholder="비밀번호" class="input_box">
       
         <input type="password" maxlength="20" placeholder="비밀번호확인 "class="input_box">
         <p>비밀번호가 일치하지 않습니다.</p>
-        <input type="text" maxlength="20" placeholder="이메일"class="input_box">
-        <input type="text" maxlength="8" minlength="8" placeholder="생년월일 8자" class="input_box">
+        <input type="text" name="email" maxlength="20" placeholder="이메일"class="input_box">
+        <input type="text" name="birth" maxlength="8" minlength="8" placeholder="생년월일 8자" class="input_box">
 
         <input type="submit" value="가입하기" class="sign_end">
     </form>
