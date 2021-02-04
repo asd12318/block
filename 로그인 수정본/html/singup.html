@@ -1,0 +1,52 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="../imges/파비콘.png">
+    <link rel="icon" href="../imges/파비콘.png">
+    <title>Photogram</title>
+    <link rel="stylesheet" href="../css/singup.css">
+    <script src="../lib/jquery-3.5.1.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <img src="../imges/logo.jpg" >
+    </div>
+    <form action="../php/sign_up.php" method="post" name="sign_up" >
+
+        <input type="text" name = "id"maxlength="20" placeholder="아이디" class="input_box_id">
+        <input type="button" onclick="../" class="search_id" value="중복 확인" >
+
+        <input type="password" name="password" maxlength="20" placeholder="비밀번호" class="pw" id="password_1">
+
+        <input type="password" maxlength="20" placeholder="비밀번호확인 "class="pw" id="password_2">
+        <span id="alert-success" style="display: none; color: rgba(0, 255, 0, 0.6);">비밀번호가 일치합니다.</span>
+        <span id="alert-danger" style="display: none; color: rgba(255, 0, 0, 0.6); font-weight: bold; ">비밀번호가 일치하지 않습니다.</span>
+        <input type="text" name="email" maxlength="20" placeholder="이메일"class="input_box">
+        <input type="text" name="birth" maxlength="8" minlength="8" placeholder="생년월일 8자" class="input_box">
+
+        <input type="submit" value="가입하기" class="sign_end">
+    </form>
+</div>
+<script>
+    $('.pw').focusout(function () {
+        var pwd1 = $("#password_1").val();
+        var pwd2 = $("#password_2").val();
+ 
+        if ( pwd1 != '' && pwd2 == '' ) {
+            null;
+        } else if (pwd1 != "" || pwd2 != "") {
+            if (pwd1 == pwd2) {
+                $("#alert-success").css('display', 'inline-block');
+                $("#alert-danger").css('display', 'none');
+            } else {
+                alert("비밀번호가 일치하지 않습니다. 비밀번호를 재확인해주세요.");
+                $("#alert-success").css('display', 'none');
+                $("#alert-danger").css('display', 'inline-block');
+            }
+        }
+    });
+</script>
+</body>
+</html>
