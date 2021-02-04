@@ -11,6 +11,7 @@ body{
     border-radius: 15px;
     width: 370px;
     padding: 10px;
+    height: 54%
 }
 #header{
     margin-left: 20px;
@@ -66,10 +67,10 @@ span{
 
 #alert-success{
     padding-left: 15px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 #alert-danger{
     padding-left: 15px;
-    line-height: 50px;
+    line-height: 30px;
 }

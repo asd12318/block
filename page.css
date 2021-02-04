@@ -1,0 +1,37 @@
+.project-create{
+    width: 80%;
+    height: 600px;
+    border: 1px solid #000;
+    background-color: #111931;
+    color: pink;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);   
+}
+
+h3{
+    margin-top: 100px;
+    text-align: center;
+}
+.header{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    float: right;
+    box-sizing: border-box;
+    background:#fff
+}
+
+.body{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    float: left;
+    box-sizing: border-box;
+    background:#fff
+ 
+
+
+}
+
