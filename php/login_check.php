@@ -17,24 +17,19 @@
     if($id === 'admin' && $pw === '1234'){
         ?>
         <script>
-            alert('Hi Administrator!');
+
         </script>
         <?php
         header("Location: ../admin/admin.php?id=".$id);
     }else{
         if($result === null){
 
-            ?>
-            <script>
-                alert('Wrong! Error!');
-                history.back();
-            </script>
-            <?php
+
             }else if($result != null){
                 if($result['password'] == $pw){
                     ?>
                     <script>
-                        alert('Login Success!');
+
                     <?php
                         $_SESSION['id'] = $result['id'];
                         header("location: ./index.php?id=".$id);
@@ -44,7 +39,7 @@
                 }else{
                     ?>
                 <script>
-                    alert('Wrong! Error!');
+
                     history.back();
                 </script>
                 <?php

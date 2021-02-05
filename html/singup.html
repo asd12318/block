@@ -17,7 +17,7 @@
 
         <input type="text" name = "id"maxlength="20" placeholder="아이디" class="input_box_id">
 
-        <button class="serch_id"><a href="../php/sign_up.php" target="_blank">중복 확인</a></button>
+        <button class="serch_id" onclick="window.open('../php/duplication_id.php','로그인확인','width=300px, height=300px')">중복 확인</button>
         <input type="password" name="password" maxlength="20" placeholder="비밀번호" class="pw" id="password_1">
 
         <input type="password" maxlength="20" placeholder="비밀번호확인 "class="pw" id="password_2">
@@ -29,6 +29,7 @@
         <input type="submit" value="가입하기" class="sign_end">
     </form>
 </div>
+
 <script>
     $('.pw').focusout(function () {
         var pwd1 = $("#password_1").val();

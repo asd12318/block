@@ -44,6 +44,10 @@ body{
     margin: 10px;
     height: 320px;
 }
-a:link {text-decoration: none; color: #333333;}
+
+
+/* 태인 . 밑줄 없앰*/
+a:link {text-decoration: none; color: #333333;}     
 a:visited {text-decoration: none; color: #333333;}
 a:active {text-decoration: none; color: #333333;}
+/* 여기까지 */
