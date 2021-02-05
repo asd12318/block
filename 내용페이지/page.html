@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="project-create">
-        <h3>사진 추가하기</h3>
+<img src="./imges/logo.jpg" class="imgs">
         <form enctype="multipart/form-data" method="post">
-            <textarea placeholder="제목을 입력해 주세요." class="header"></textarea>
+            <textarea placeholder="" class="header"></textarea>
+            <textarea placeholder="제목을 입력해 주세요.." class="body"></textarea>
+            <textarea placeholder="내용을 입력해 주세요." class="tq"></textarea>
             <div id="image_container"></div>
             <div class="file1"><input name="userfileC" type="file" id="image" accept="image/*"onchange="setThumbnail(event);"></div>
-           
-            <div id="ju"><button type="button" onclick="">저장</button></div>
+          
+            <div><button type="button" onclick="">저장</button></div>
         </form>
     </div>
 </body>
