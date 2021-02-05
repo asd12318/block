@@ -11,7 +11,7 @@ body{
     border-radius: 15px;
     width: 370px;
     padding: 10px;
-    height: 58%
+    height: 54%
 }
 #header{
     margin-left: 20px;
@@ -50,7 +50,7 @@ span{
 
 .sign_end{
     width: 95%;
-    height: 52px;
+    height: 55px;
     background-color: #ffbdbd;
     font-family: 'HYpost';
     font-size: 25px;
