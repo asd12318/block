@@ -11,7 +11,7 @@ body{
     border-radius: 15px;
     width: 370px;
     padding: 10px;
-    height: 58%
+    height: 54%
 }
 #header{
     margin-left: 20px;
@@ -50,7 +50,7 @@ span{
 
 .sign_end{
     width: 95%;
-    height: 52px;
+    height: 55px;
     background-color: #ffbdbd;
     font-family: 'HYpost';
     font-size: 25px;
@@ -74,6 +74,11 @@ span{
     padding-left: 15px;
     line-height: 30px;
 }
+<<<<<<< HEAD
 a:link {text-decoration: none; color: #333333;}     
 a:visited {text-decoration: none; color: #333333;}
 a:active {text-decoration: none; color: #333333;}
+=======
+
+/*
+>>>>>>> 262cd01f6bd447d5cbe6eae1e040487f69fa5f0c
