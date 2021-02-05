@@ -8,3 +8,4 @@ function setThumbnail(event)
            
            reader.readAsDataURL(event.target.files[0]); } 
     
+           //
